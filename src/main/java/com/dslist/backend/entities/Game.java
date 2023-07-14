@@ -1,6 +1,6 @@
 package com.dslist.backend.entities;
 
-import java.util.Objects;
+
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -20,14 +20,24 @@ public class Game {
     @Column(name = "game_year")
     private Integer year;
     private String genre;
-    private String platform;
+    private String platforms;
+    private Double score;
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game(){
 
     }
+
+        public Game(Double score){
+            this.score = score;
+    }
+
 
     public Long getId() {
         return id;
@@ -61,12 +71,20 @@ public class Game {
         this.genre = genre;
     }
 
-    public String getPlatform() {
-        return platform;
+    public String getPlatforms() {
+        return platforms;
     }
 
     public void setPlatform(String platform) {
-        this.platform = platform;
+        this.platforms = platform;
+    }
+
+    public Double getScore() {
+        return score;
+    }
+
+    public void setScore(Double score) {
+        this.score = score;
     }
 
     public String getImgUrl() {
@@ -117,7 +135,8 @@ public class Game {
             return false;
         return true;
     }
-    
+
+
     
 
 }
