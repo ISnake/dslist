@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.dslist.backend.dto.GameMinDto;
-import com.dslist.backend.entities.Game;
 import com.dslist.backend.services.GameService;
 
 

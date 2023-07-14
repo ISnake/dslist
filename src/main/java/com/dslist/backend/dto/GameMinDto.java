@@ -2,8 +2,6 @@ package com.dslist.backend.dto;
 
 import com.dslist.backend.entities.Game;
 
-import jakarta.persistence.Column;
-
 public class GameMinDto {
 
     private Long id;
