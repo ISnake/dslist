@@ -12,10 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 import com.dslist.backend.dto.GameListDTO;
-import com.dslist.backend.dto.GameMinDto;
 import com.dslist.backend.dto.ReplacementDTO;
 import com.dslist.backend.services.GameListService;
-import com.dslist.backend.services.GameService;
 
 
 @RestController
@@ -24,9 +22,6 @@ public class GameListController {
 
     @Autowired
     private GameListService gameListService;
-
-    @Autowired
-    private GameService gameService;
 
     @GetMapping
     public List<GameListDTO> findAll() {
