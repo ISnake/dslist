@@ -30,6 +30,7 @@ A aplicação consiste em uma pesquisa de preferência de games, onde os dados s
 - Back end: Railway
 - Banco de dados: Postgresql
 - Banco de dados: H2
+- Banco de dados: Docker
 
 # Como executar o projeto
 
